@@ -1,3 +1,4 @@
 NO.REG	: 1920010109
 Nama	: Kentaro Aksyal
 Jurusan	: Teknik Informatika
+Tahun	: 2019
