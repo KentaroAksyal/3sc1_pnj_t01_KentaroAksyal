@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_hospital">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/txtValueNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="104dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueNomor"
+            android:layout_alignEnd="@+id/txtValueNomor"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValueTglLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueName"
+            android:layout_alignStart="@+id/txtValueName"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValueJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueTglLahir"
+            android:layout_alignStart="@+id/txtValueTglLahir"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValueAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueJenisKelamin"
+            android:layout_alignEnd="@+id/txtValueJenisKelamin"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValueUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueAlamat"
+            android:layout_alignEnd="@+id/txtValueAlamat"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtValuePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValueUsername"
+            android:layout_alignEnd="@+id/txtValueUsername"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textValueVaksin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValuePassword"
+            android:layout_alignEnd="@+id/txtValuePassword"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtnomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtValueName"
+            android:layout_alignParentStart="true"
+            android:text="Nomor" />
+
+        <TextView
+            android:id="@+id/txtnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValueName"
+            android:layout_alignStart="@+id/txtnomor"
+            android:layout_alignBottom="@+id/txtValueName"
+            android:text="Nama" />
+
+        <TextView
+            android:id="@+id/txttanggallahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValueTglLahir"
+            android:layout_alignStart="@+id/txtnama"
+            android:layout_alignBottom="@+id/txtValueTglLahir"
+            android:text="Tanggal Lahir" />
+
+        <TextView
+            android:id="@+id/txtjeniskelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValueJenisKelamin"
+            android:layout_alignStart="@+id/txttanggallahir"
+            android:layout_alignBottom="@+id/txtValueJenisKelamin"
+            android:text="Jenis Kelamin" />
+
+        <TextView
+            android:id="@+id/txtalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValueAlamat"
+            android:layout_alignStart="@+id/txtjeniskelamin"
+            android:layout_alignBottom="@+id/txtValueAlamat"
+            android:text="Alamat" />
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValueUsername"
+            android:layout_alignStart="@+id/txttanggallahir"
+            android:layout_alignBottom="@+id/txtValueUsername"
+            android:text="Username" />
+
+        <TextView
+            android:id="@+id/Textpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtValuePassword"
+            android:layout_alignStart="@+id/txtalamat"
+            android:layout_alignBottom="@+id/txtValuePassword"
+            android:text="Password" />
+
+        <TextView
+            android:id="@+id/TextVaksin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textValueVaksin"
+            android:layout_alignStart="@+id/txtalamat"
+            android:layout_alignBottom="@+id/textValueVaksin"
+            android:text="Vaksinasi" />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

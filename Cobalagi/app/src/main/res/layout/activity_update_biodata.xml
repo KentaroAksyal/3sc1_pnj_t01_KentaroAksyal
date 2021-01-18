@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_hospital">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/textValueNomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNomor"
+            android:layout_alignStart="@+id/textNomor">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Nomor" />
+
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueNomor"
+            android:layout_alignStart="@+id/textValueNomor"
+            android:layout_marginTop="10dp"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/textValueNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNama"
+            android:layout_alignStart="@+id/textNama" />
+
+        <TextView
+            android:id="@+id/textTanggalLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueNama"
+            android:layout_alignStart="@+id/textValueNama"
+            android:layout_marginTop="10dp"
+            android:text="Tanggal Lahir" />
+
+        <EditText
+            android:id="@+id/textValueTglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTanggalLahir"
+            android:layout_alignStart="@+id/textTanggalLahir" />
+
+        <TextView
+            android:id="@+id/textJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueTglLahir"
+            android:layout_alignStart="@+id/textValueTglLahir"
+            android:layout_marginTop="10dp"
+            android:text="Jenis Kelamin" />
+
+        <EditText
+            android:id="@+id/textValueJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textJenisKelamin"
+            android:layout_alignStart="@+id/textJenisKelamin" />
+
+        <TextView
+            android:id="@+id/textAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueJenisKelamin"
+            android:layout_alignStart="@+id/textValueJenisKelamin"
+            android:layout_marginTop="10dp"
+            android:text="Alamat" />
+
+        <EditText
+            android:id="@+id/textValueAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAlamat"
+            android:layout_alignStart="@+id/textAlamat" />
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueAlamat"
+            android:layout_alignStart="@+id/textValueAlamat"
+            android:layout_marginTop="10dp"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/textValueUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textUsername"
+            android:layout_alignStart="@+id/textUsername" />
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValueUsername"
+            android:layout_alignStart="@+id/textValueUsername"
+            android:layout_marginTop="10dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/textValuePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPassword"
+            android:layout_alignStart="@+id/textPassword" />
+
+        <TextView
+            android:id="@+id/textVaksin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textValuePassword"
+            android:layout_alignStart="@+id/textValuePassword"
+            android:layout_marginTop="10dp"
+            android:text="Vaksinasi" />
+
+        <EditText
+            android:id="@+id/textValueVaksin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textVaksin"
+            android:layout_alignStart="@+id/textVaksin" />
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:text="Update Data"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:theme="@style/MaterialTheme"
+        app:backgroundTint="@color/colorAccent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
